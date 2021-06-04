@@ -1,19 +1,17 @@
-var email, senha;
+function login(form)
+{
 
-email = document.getElementById('enter-email');
-senha = document.getElementById('enter-senha');
+    form.email.value = form.email.value.toLoweCase()
+    form.password.value = form.password.value.toLoweCase()
 
-/* Botão Entrar */
-
-function Entrar(){
-    if((email == 'nicolaselioteriojf@gmail.com')&(senha == 'z4mcoupe')){
-        alert('Olá Nicolas');
+    if ((form.email.value == 'nicolas@gmail.com') && (form.password.value == '123'))
+    {
+        location = 'index.html'
+    }
+    else 
+    {
+        form.email.value = ''
+        form.password.value = ''
+        alert('Dados incorretos');
     }
 }
-
-/* Botão Cadastrar-se */
-
-function Cadastrar(){
-    alert('Email ou senha inválidos');
-}
-
