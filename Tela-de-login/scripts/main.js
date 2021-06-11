@@ -1,8 +1,8 @@
 function login(form)
 {
 
-    form.email.value = form.email.value.toLoweCase()
-    form.password.value = form.password.value.toLoweCase()
+    form.email.value = form.email.value.toLowerCase()
+    form.password.value = form.password.value.toLowerCase()
 
     if ((form.email.value == 'nicolas@gmail.com') && (form.password.value == '123'))
     {
